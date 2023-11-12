@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Hello WebSocket</title>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.6.1/sockjs.min.js"
+      integrity="sha512-1QvjE7BtotQjkq8PxLeF6P46gEpBRXuskzIVgjFpekzFVF4yjRgrQvTG1MTOJ3yQgvTteKAcO7DSZI92+u/yZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"
+      integrity="sha512-iKDtgDyTHjAitUDdLljGhenhPwrbBfqTKWO1mkhSFH3A7blITC9MhYon6SjnMhp4o0rADGw9yAC6EW4t5a4K3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <div id="main-content">
+      <div>
+        <div>
+          <label>What is your username?</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Your username here..."
+          />
+        </div>
+        <button id="connect" type="submit">Connect</button>
+        <form>
+          <div>
+            <label>User will received message</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="User will receive the message..."
+            />
+          </div>
+          <button id="send" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <div><label>Message from someone: </label><span id="message"></span></div>
+  </body>
+</html>
